@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class TouchController : MonoBehaviour
 {
-    // Singleton
-    public static PlayerController obj;
-
     // References
     private Rigidbody2D _rigidbody;
     private Animator _animator;
@@ -21,7 +18,6 @@ public class PlayerController : MonoBehaviour
     private bool _isGrounded;
 
     // Inspector variables
-    [SerializeField] private Joystick _joystick;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius;
@@ -31,7 +27,6 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        obj = this;
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
@@ -39,24 +34,51 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        // Movement
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        //_movement = new Vector2(horizontalInput, 0f);
+
+        if(Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPosition = Camera.main.ScreenToViewportPoint(touch.position);
+
+            if (touchPosition.x > 0 && _facingRight == true)
+            {
+                float horizontalVelocity = _movement.normalized.x * speed;
+                _rigidbody.velocity = new Vector2(horizontalVelocity, 0f);
+                Flip();
+                Debug.Log("Hola derechaa");
+            } else if (touchPosition.x < 0 && _facingRight == false)
+            {
+                float horizontalVelocity = _movement.normalized.x * speed;
+                _rigidbody.velocity = new Vector2(horizontalVelocity, 0f);
+                Flip();
+            }
+        }
+
+        // Flip character
+        //if (horizontalInput < 0f && _facingRight == true)
+        //{
+        //    Flip();
+        //}
+        //else if (horizontalInput > 0f && _facingRight == false)
+        //{
+        //    Flip();
+        //}
 
         // Is Grounded?
         _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         // Is Jumping?
-        float verticalInput = _joystick.Vertical;
-        //if (Input.GetButtonDown("Jump") && _isGrounded == true) #Computer movement
-        if(verticalInput >= .5f)
+        if (Input.GetButtonDown("Jump") && _isGrounded == true)
         {
-            if (!_isGrounded) return;
-
             _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
@@ -74,11 +96,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        float horizontalVelocity = _movement.normalized.x * speed;
-        _rigidbody.velocity = new Vector2(horizontalVelocity, _rigidbody.velocity.y);
-    }
+    //void FixedUpdate()
+    //{
+    //    float horizontalVelocity = _movement.normalized.x * speed;
+    //    _rigidbody.velocity = new Vector2(horizontalVelocity, _rigidbody.velocity.y);
+    //}
 
 
     void LateUpdate()
@@ -88,46 +110,11 @@ public class PlayerController : MonoBehaviour
         _animator.SetFloat("verticalVelocity", _rigidbody.velocity.y);
     }
 
-    public void Movement()
-    {
-        // Movement
-        // float horizontalInput = Input.GetAxisRaw("Horizontal"); // Computer movement
-
-        float horizontalInput;
-        if(_joystick.Horizontal >= .2f)
-        {
-            horizontalInput = _joystick.Horizontal; // Joystick movement
-        } else if (_joystick.Horizontal <= -.2f)
-        {
-            horizontalInput = _joystick.Horizontal; // Joystick movement
-        } else
-        {
-            horizontalInput = 0f;
-        }
-        
-        _movement = new Vector2(horizontalInput, 0f);
-
-        // Flip character
-        if (horizontalInput < 0f && _facingRight == true)
-        {
-            Flip();
-        }
-        else if (horizontalInput > 0f && _facingRight == false)
-        {
-            Flip();
-        }
-    }
-
     void Flip()
     {
         _facingRight = !_facingRight;
         float localScaleX = transform.localScale.x;
         localScaleX *= -1f;
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
-    }
-
-    void OnDestroy()
-    {
-        obj = null;    
     }
 }

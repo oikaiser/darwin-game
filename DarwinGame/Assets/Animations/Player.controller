@@ -307,7 +307,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jump
+  m_Name: Player_jump
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4745781734343387487}

@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     private bool _isGrounded;
 
     // Inspector variables
-    [SerializeField] private Joystick _joystick;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius;
@@ -51,14 +50,13 @@ public class PlayerController : MonoBehaviour
         _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         // Is Jumping?
-        float verticalInput = _joystick.Vertical;
+        //float verticalInput = _joystick.Vertical;
         //if (Input.GetButtonDown("Jump") && _isGrounded == true) #Computer movement
-        if(verticalInput >= .5f)
-        {
-            if (!_isGrounded) return;
-
-            _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
+        //if(verticalInput >= .8f)
+        //{
+        //    if (!_isGrounded) return;
+        //    _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        //}
 
         // Is Immune?
         if (_isImmune)
@@ -71,6 +69,17 @@ public class PlayerController : MonoBehaviour
                 _isImmune = false;
                 _sprite.enabled = true;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "PowerUp")
+        {
+            collision.gameObject.SetActive(false);
+            speed = 10f;
+            jumpForce = 12f;
+            StartCoroutine(ResetPower());
         }
     }
 
@@ -91,20 +100,9 @@ public class PlayerController : MonoBehaviour
     public void Movement()
     {
         // Movement
-        // float horizontalInput = Input.GetAxisRaw("Horizontal"); // Computer movement
+        //float horizontalInput = Input.GetAxisRaw("Horizontal"); // Computer movement
+        float horizontalInput = SimpleInput.GetAxisRaw("Horizontal");
 
-        float horizontalInput;
-        if(_joystick.Horizontal >= .2f)
-        {
-            horizontalInput = _joystick.Horizontal; // Joystick movement
-        } else if (_joystick.Horizontal <= -.2f)
-        {
-            horizontalInput = _joystick.Horizontal; // Joystick movement
-        } else
-        {
-            horizontalInput = 0f;
-        }
-        
         _movement = new Vector2(horizontalInput, 0f);
 
         // Flip character
@@ -118,12 +116,27 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Jump()
+    {
+        if(_isGrounded == true)
+        {
+            _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+    }
+
     void Flip()
     {
         _facingRight = !_facingRight;
         float localScaleX = transform.localScale.x;
         localScaleX *= -1f;
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+    }
+
+    private IEnumerator ResetPower()
+    {
+        yield return new WaitForSeconds(10);
+        jumpForce = 7;
+        speed = 5;
     }
 
     void OnDestroy()

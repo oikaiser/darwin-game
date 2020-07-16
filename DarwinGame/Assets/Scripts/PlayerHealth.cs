@@ -78,11 +78,6 @@ public class PlayerHealth : MonoBehaviour
         {
             _rigidbody.velocity = Vector2.zero;
             
-            if(PlayerController.obj._facingRight) {
-                _rigidbody.AddForce(new Vector2(-hurtForce, 200f));
-            } else {
-                _rigidbody.AddForce(new Vector2(hurtForce, 200f));
-            }
             StartCoroutine("VisualFeedback");
             yield return new WaitForSeconds(1.5f);
         }

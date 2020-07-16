@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius;
-    [SerializeField] private float speed = 6f;
-    [SerializeField] private float jumpForce = 8f;
+    [SerializeField] private float speed = 7f;
+    [SerializeField] private float jumpForce = 9f;
     [SerializeField] private float hurtForce = 1000f;
 
     void Awake()
@@ -110,8 +110,8 @@ public class PlayerController : MonoBehaviour
     private IEnumerator ResetPower()
     {
         yield return new WaitForSeconds(10f);
-        jumpForce = 8f;
-        speed = 6f;
+        jumpForce = 9f;
+        speed = 7f;
     }
 
     void OnDestroy()

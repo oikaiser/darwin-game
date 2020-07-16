@@ -6,9 +6,10 @@ public class PlayerHealth : MonoBehaviour
 {
     public static PlayerHealth obj;
     [SerializeField] private int totalHealth = 3;
-    [SerializeField] private float hurtForce = 1000f;
+    [SerializeField] private float hurtForce = 4000f;
+    [SerializeField] RectTransform healthUI;
     public int health;
-    private float floraSize = 16f;
+    private float floraSize = 100f;
     
     [Header("Invulnerability")]
     public Color flashColor;
@@ -45,6 +46,8 @@ public class PlayerHealth : MonoBehaviour
             // gameObject.SetActive(false);
         }
 
+        healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);
+
         Debug.Log("Player got damaged. His current health is " + health);
     }
 
@@ -57,6 +60,8 @@ public class PlayerHealth : MonoBehaviour
         {
             health = totalHealth;
         }
+
+        healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);
 
         Debug.Log("Player got some life: His current health is " + health);
     }

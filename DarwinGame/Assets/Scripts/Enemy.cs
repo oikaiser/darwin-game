@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public int damage = 1;
     public float speed = 3f;
     public Transform groundDectection;
-    public int scoreGive = 50;
+    public int score = 50;
     private bool movingRight = true;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
@@ -70,15 +70,15 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             getKilled();
-            Debug.Log("Entro");
         }
 
     }
 
     private void getKilled()
     {
-        
         StartCoroutine("VisualFeedback", 2f);
+        GameManager.obj.AddScore(score);
+        UIManager.obj.UpdateScore();
     }
 
     private IEnumerator VisualFeedback(float waitTime)

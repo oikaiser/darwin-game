@@ -20,6 +20,10 @@ public class LeafItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            //Add score
+            GameManager.obj.AddScore(score);
+            UIManager.obj.UpdateScore();
+
             // Disable collider
 			_collider.enabled = false;
 

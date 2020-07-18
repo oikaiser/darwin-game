@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            // gameObject.SetActive(false);
+            GameManager.obj.GameOver();
         }
 
         healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);

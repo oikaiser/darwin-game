@@ -1,0 +1,722 @@
+fileFormatVersion: 2
+guid: f3562875225da4c2c973a65dce713410
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -298795495087189882
+    second: floor_lv1_0
+  - first:
+      213: 2772742578952833542
+    second: floor_lv1_1
+  - first:
+      213: -3384344530975832147
+    second: floor_lv1_2
+  - first:
+      213: -5287406412837853776
+    second: floor_lv1_3
+  - first:
+      213: 5309303008492182784
+    second: floor_lv1_4
+  - first:
+      213: 4215287195565114714
+    second: floor_lv1_5
+  - first:
+      213: 4304763744113084063
+    second: floor_lv1_6
+  - first:
+      213: 2137118696926855983
+    second: floor_lv1_7
+  - first:
+      213: 4967760755374273746
+    second: floor_lv1_8
+  - first:
+      213: 4367301574081455741
+    second: floor_lv1_9
+  - first:
+      213: -961847372851964840
+    second: floor_lv1_10
+  - first:
+      213: -4847203184965395099
+    second: floor_lv1_11
+  - first:
+      213: -4376526288227872196
+    second: floor_lv1_12
+  - first:
+      213: -5001189337240525507
+    second: floor_lv1_13
+  - first:
+      213: 4080576849646258628
+    second: floor_lv1_14
+  - first:
+      213: -9200665457195281466
+    second: floor_lv1_15
+  - first:
+      213: 3603099322649111840
+    second: floor_lv1_16
+  - first:
+      213: -189352691169177777
+    second: floor_lv1_17
+  - first:
+      213: 1129354131233330256
+    second: floor_lv1_18
+  - first:
+      213: 2471492151736080633
+    second: floor_lv1_19
+  - first:
+      213: -5221927270558952733
+    second: floor_lv1_20
+  - first:
+      213: 3424276266737625319
+    second: floor_lv1_21
+  - first:
+      213: -466535691022798501
+    second: floor_lv1_22
+  - first:
+      213: -4321847120704811
+    second: floor_lv1_23
+  - first:
+      213: 4970795819144632486
+    second: floor_lv1_24
+  - first:
+      213: 7998076343547634185
+    second: floor_lv1_25
+  - first:
+      213: -8471897474452818662
+    second: floor_lv1_26
+  - first:
+      213: 7541214408095730213
+    second: floor_lv1_27
+  - first:
+      213: 5382523220529588398
+    second: floor_lv1_28
+  - first:
+      213: 7641909209100109150
+    second: floor_lv1_29
+  - first:
+      213: -6872595989033031321
+    second: floor_lv1_30
+  - first:
+      213: -1147317562797439601
+    second: floor_lv1_31
+  - first:
+      213: -3057848999275016233
+    second: floor_lv1_32
+  - first:
+      213: 1418536288265284754
+    second: floor_lv1_33
+  - first:
+      213: -1918134263825866833
+    second: floor_lv1_34
+  - first:
+      213: -460263993044860184
+    second: floor_lv1_35
+  - first:
+      213: -1593365454338587844
+    second: floor_lv1_36
+  - first:
+      213: 681740780792331206
+    second: floor_lv1_37
+  - first:
+      213: 4784437203152082652
+    second: floor_lv1_38
+  - first:
+      213: -6367827405119766561
+    second: floor_lv1_39
+  - first:
+      213: 4088033133861450707
+    second: floor_lv1_40
+  - first:
+      213: -3277364524997361015
+    second: floor_lv1_41
+  - first:
+      213: -3921859493603983102
+    second: floor_lv1_42
+  - first:
+      213: 7209063777901043716
+    second: floor_lv1_43
+  - first:
+      213: 4289945754629681172
+    second: floor_lv1_44
+  - first:
+      213: -121600488125002042
+    second: floor_lv1_45
+  - first:
+      213: -8970268024213608170
+    second: floor_lv1_46
+  - first:
+      213: -6357095066365357295
+    second: floor_lv1_47
+  - first:
+      213: 271067202654222139
+    second: floor_lv1_48
+  - first:
+      213: 955297987514294730
+    second: floor_lv1_49
+  - first:
+      213: 4043074515191767457
+    second: floor_lv1_50
+  - first:
+      213: -8064312044477724276
+    second: floor_lv1_51
+  - first:
+      213: -1446162284518258286
+    second: floor_lv1_52
+  - first:
+      213: 3366025034063910476
+    second: floor_lv1_53
+  - first:
+      213: -7017904326004374236
+    second: floor_lv1_54
+  - first:
+      213: -3360478723050070114
+    second: floor_lv1_55
+  - first:
+      213: 2799449144908636606
+    second: floor_lv1_56
+  - first:
+      213: -1484465201508415522
+    second: floor_lv1_57
+  - first:
+      213: 566446895960576748
+    second: floor_lv1_58
+  - first:
+      213: 3820510049504821219
+    second: floor_lv1_59
+  - first:
+      213: 3378891040989552952
+    second: floor_lv1_60
+  - first:
+      213: 3428497434364628058
+    second: floor_lv1_61
+  - first:
+      213: 8880942562982577868
+    second: floor_lv1_62
+  - first:
+      213: 1329664780941225838
+    second: floor_lv1_63
+  - first:
+      213: 1105023461546024855
+    second: floor_lv1_64
+  - first:
+      213: 5190828820857619660
+    second: floor_lv1_65
+  - first:
+      213: 6101236031297392405
+    second: floor_lv1_66
+  - first:
+      213: 3041126260029156049
+    second: floor_lv1_67
+  - first:
+      213: -7059489436296540009
+    second: floor_lv1_68
+  - first:
+      213: -2125305063027648243
+    second: floor_lv1_69
+  - first:
+      213: 1330770026319108941
+    second: floor_lv1_70
+  - first:
+      213: -3570951085540441199
+    second: floor_lv1_71
+  - first:
+      213: -8138999640447783542
+    second: floor_lv1_72
+  - first:
+      213: -2679456968315555169
+    second: floor_lv1_73
+  - first:
+      213: -9014292857178043308
+    second: floor_lv1_74
+  - first:
+      213: 7844096967177507831
+    second: floor_lv1_75
+  - first:
+      213: 7891644900173128122
+    second: floor_lv1_76
+  - first:
+      213: 4382434207703239214
+    second: floor_lv1_77
+  - first:
+      213: 690120612916329617
+    second: floor_lv1_78
+  - first:
+      213: 9165454553834827471
+    second: floor_lv1_79
+  - first:
+      213: -548071422470308845
+    second: floor_lv1_80
+  - first:
+      213: 4564912864541250672
+    second: floor_lv1_81
+  - first:
+      213: 1887689557150042482
+    second: floor_lv1_82
+  - first:
+      213: -6002878426745824332
+    second: floor_lv1_83
+  - first:
+      213: -944513122017229925
+    second: floor_lv1_84
+  - first:
+      213: 1243272126196560280
+    second: floor_lv1_85
+  - first:
+      213: 661108235338098424
+    second: floor_lv1_86
+  - first:
+      213: -5970725258058321374
+    second: floor_lv1_87
+  - first:
+      213: 8858785579359870789
+    second: floor_lv1_88
+  - first:
+      213: 5348721134381274326
+    second: floor_lv1_89
+  - first:
+      213: 7723953627970199013
+    second: floor_lv1_90
+  - first:
+      213: 3590518844592842470
+    second: floor_lv1_91
+  - first:
+      213: -1409293969338936801
+    second: floor_lv1_92
+  - first:
+      213: 5983045859678638961
+    second: floor_lv1_93
+  - first:
+      213: -4860148714581269902
+    second: floor_lv1_94
+  - first:
+      213: -928856793687638562
+    second: floor_lv1_95
+  - first:
+      213: 7995805193296290135
+    second: floor_lv1_96
+  - first:
+      213: -8536891279663816770
+    second: floor_lv1_97
+  - first:
+      213: -6238059586676759154
+    second: floor_lv1_98
+  - first:
+      213: -1543804155764798257
+    second: floor_lv1_0
+  - first:
+      213: 7741330666132623947
+    second: floor_lv1_1
+  - first:
+      213: 7067249032769635113
+    second: floor_lv1_3
+  - first:
+      213: 7861311206385145808
+    second: floor_lv1_4
+  - first:
+      213: -2517787778277943482
+    second: floor_lv1_11
+  - first:
+      213: -4233375108281036418
+    second: floor_lv1_12
+  - first:
+      213: -2798269480502141515
+    second: floor_lv1_13
+  - first:
+      213: -8623514271239281395
+    second: floor_lv1_14
+  - first:
+      213: -3634678400465595984
+    second: floor_lv1_15
+  - first:
+      213: 1961798752567560640
+    second: floor_lv1_16
+  - first:
+      213: -5866386305163041155
+    second: floor_lv1_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: floor_lv1_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 559
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68057de84177adbf0800000000000000
+      internalID: -298795495087189882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 560
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a85185fa2ca7620800000000000000
+      internalID: 2772742578952833542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 560
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b56da3a1eb5f96b0800000000000000
+      internalID: -5287406412837853776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 562
+        width: 99
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dd612d4fe6ea940800000000000000
+      internalID: 5309303008492182784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_11
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 187
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ddef582664bbcb0800000000000000
+      internalID: -4847203184965395099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 189
+        width: 107
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32d40857847343c0800000000000000
+      internalID: -4376526288227872196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 188
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35ae439bc4389ab0800000000000000
+      internalID: -5001189337240525507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 189
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c909d1660f11a830800000000000000
+      internalID: 4080576849646258628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_15
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 187
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c31bae838ba05080800000000000000
+      internalID: -9200665457195281466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 188
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d63f07eb7c00230800000000000000
+      internalID: 3603099322649111840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_17
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 186
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fc8990bb84f5df0800000000000000
+      internalID: -189352691169177777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_lv1_8
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 188
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4b531361801f440800000000000000
+      internalID: 4967760755374273746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

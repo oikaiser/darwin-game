@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrollBackground : MonoBehaviour
 {
-    float scroollSpeed = -5f;
+    float scroollSpeed = 1f;
     Vector2 startPosition;
 
     // Start is called before the first frame update

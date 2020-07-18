@@ -41,7 +41,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        if (!GameManager.obj.gamePaused)
+        {
+            Movement();
+        }
 
         // Is Grounded?
         _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);

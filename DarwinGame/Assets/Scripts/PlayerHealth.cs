@@ -6,7 +6,6 @@ public class PlayerHealth : MonoBehaviour
 {
     public static PlayerHealth obj;
     [SerializeField] private int totalHealth = 3;
-    [SerializeField] private float hurtForce = 4000f;
     [SerializeField] RectTransform healthUI;
     public int health;
     private float floraSize = 100f;

@@ -36,6 +36,18 @@ public class UIManager : MonoBehaviour
         scoreLabel.text = "" + GameManager.obj.score;
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void GoToMenu()
+    {
+        GameManager.obj.gamePaused = false;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+    }
+
     public void Resume()
     {
         pauseMenuUI.SetActive(false);

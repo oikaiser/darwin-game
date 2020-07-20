@@ -6,15 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     // Singleton
     public static PlayerController obj;
+    public bool _facingRight = true;
 
     // References
     private Rigidbody2D _rigidbody;
     private Animator _animator;
     private SpriteRenderer _sprite;
+    private Vector3 _respawnPoint;
 
     // Movement
     private Vector2 _movement;
-    public bool _facingRight = true;
     private bool _isGrounded;
 
     // Inspector variables
@@ -23,13 +24,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private float speed = 7f;
     [SerializeField] private float jumpForce = 9f;
-    [SerializeField] private float hurtForce = 1000f;
 
     void Awake()
     {
         obj = this;
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _respawnPoint = transform.position;
     }
 
     // Start is called before the first frame update
@@ -58,6 +59,11 @@ public class PlayerController : MonoBehaviour
             speed = 10f;
             jumpForce = 12f;
             StartCoroutine(ResetPower());
+        }
+
+        if(collision.tag == "FallDetector")
+        {
+            transform.position = _respawnPoint;
         }
     }
 

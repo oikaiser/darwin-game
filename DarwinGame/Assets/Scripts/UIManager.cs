@@ -8,10 +8,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager obj;
 
-    // public Text livesLabel;
+    public Text livesLabel;
     public Text scoreLabel;
-
-    // public Transform UIPanel;
     public GameObject pauseMenuUI;
 
     void Awake()
@@ -29,6 +27,11 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateLives()
+    {
+        livesLabel.text = "" + PlayerHealth.obj.health;
     }
 
     public void UpdateScore()

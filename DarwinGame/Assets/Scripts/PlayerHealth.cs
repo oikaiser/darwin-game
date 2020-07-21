@@ -44,8 +44,9 @@ public class PlayerHealth : MonoBehaviour
             health = 0;
             GameManager.obj.GameOver();
         }
-
-        healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);
+        
+        UIManager.obj.UpdateLives();
+        // healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);
 
         Debug.Log("Player got damaged. His current health is " + health);
     }
@@ -59,8 +60,9 @@ public class PlayerHealth : MonoBehaviour
         {
             health = totalHealth;
         }
-
-        healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);
+        
+        UIManager.obj.UpdateLives();
+        // healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);
 
         Debug.Log("Player got some life: His current health is " + health);
     }

@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private float speed = 7f;
-    [SerializeField] private float jumpForce = 9f;
+    [SerializeField] private float jumpForce = 12f;
 
     void Awake()
     {
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             speed = 10f;
-            jumpForce = 12f;
+            jumpForce = 14f;
             StartCoroutine(ResetPower());
         }
 
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator ResetPower()
     {
         yield return new WaitForSeconds(10f);
-        jumpForce = 9f;
+        jumpForce = 12f;
         speed = 7f;
     }
 

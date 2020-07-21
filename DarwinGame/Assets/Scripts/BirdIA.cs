@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class BirdIA : MonoBehaviour
 {
-    public int damage = 1;
-    public float speed = 3f;
-    public Transform groundDectection;
-    public int score = 50;
-    private bool movingRight = true;
+    private bool _movingRight = true;
+    private float _speed = 2f;
+    private int _damage = 1;
+    private int _score = 50;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
 
@@ -17,6 +16,7 @@ public class Enemy : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,70 +26,67 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * _speed * Time.deltaTime);
 
-        // Evitar caer en precipicio
-        RaycastHit2D _isGroundFloor = Physics2D.Raycast(groundDectection.position, Vector2.down, 2.0f, LayerMask.GetMask("Ground"));
-        
-        if (_isGroundFloor.collider == false)
+        if (_movingRight == true)
         {
-            if(movingRight == true)
-            {
-                transform.eulerAngles = new Vector3(0, 180, 0);
-                movingRight = false;
-            } else {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        } else {
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        foreach (ContactPoint2D point in collision.contacts)
-        {
-            
-        }
         // Dañar a jugador
         if (collision.gameObject.CompareTag("Player"))
         {
             if (collision.gameObject.transform.position.x < transform.position.x)
             {
-                PlayerHealth.obj.AddDamage(damage);
+                PlayerHealth.obj.AddDamage(_damage);
             } else
             {
-                PlayerHealth.obj.AddDamage(damage);
+                PlayerHealth.obj.AddDamage(_damage);
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Turn"))
+        {
+            if (_movingRight)
+            {
+                _movingRight = false;
+            } else {
+                _movingRight = true;
+            }
+        }
+
         // Destruir enemigo
         if (collision.gameObject.CompareTag("Player"))
         {
             getKilled();
         }
-
     }
 
-    private void getKilled()
+    void getKilled()
     {
         StartCoroutine("VisualFeedback", 2f);
-        GameManager.obj.AddScore(score);
+        GameManager.obj.AddScore(_score);
         UIManager.obj.UpdateScore();
     }
 
-    private IEnumerator VisualFeedback(float waitTime)
+    IEnumerator VisualFeedback(float waitTime)
     {
         if (_rigidbody != null)
         {
             GetComponent<CapsuleCollider2D>().enabled = false;
             _animator.SetTrigger("isDead");
+            transform.GetChild(0).gameObject.SetActive(false);
             _rigidbody.bodyType = RigidbodyType2D.Kinematic;
             _rigidbody.velocity = Vector2.zero;
-            speed = 0f;
+            _speed = 0f;
             yield return new WaitForSeconds(waitTime);
             gameObject.SetActive(false);
         }

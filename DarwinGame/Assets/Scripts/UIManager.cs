@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public static UIManager obj;
-
     public Text livesLabel;
     public Text scoreLabel;
     public GameObject pauseMenuUI;

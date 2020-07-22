@@ -13,10 +13,10 @@ TextureImporter:
     second: floor_lv1_2
   - first:
       213: -5287406412837853776
-    second: floor_lv1_3
+    second: floor_lv1_2
   - first:
       213: 5309303008492182784
-    second: floor_lv1_4
+    second: floor_lv1_3
   - first:
       213: 4215287195565114714
     second: floor_lv1_5
@@ -28,7 +28,7 @@ TextureImporter:
     second: floor_lv1_7
   - first:
       213: 4967760755374273746
-    second: floor_lv1_8
+    second: floor_lv1_11
   - first:
       213: 4367301574081455741
     second: floor_lv1_9
@@ -37,25 +37,25 @@ TextureImporter:
     second: floor_lv1_10
   - first:
       213: -4847203184965395099
-    second: floor_lv1_11
+    second: floor_lv1_9
   - first:
       213: -4376526288227872196
-    second: floor_lv1_12
+    second: floor_lv1_4
   - first:
       213: -5001189337240525507
-    second: floor_lv1_13
+    second: floor_lv1_5
   - first:
       213: 4080576849646258628
-    second: floor_lv1_14
+    second: floor_lv1_6
   - first:
       213: -9200665457195281466
-    second: floor_lv1_15
+    second: floor_lv1_7
   - first:
       213: 3603099322649111840
-    second: floor_lv1_16
+    second: floor_lv1_8
   - first:
       213: -189352691169177777
-    second: floor_lv1_17
+    second: floor_lv1_10
   - first:
       213: 1129354131233330256
     second: floor_lv1_18
@@ -307,31 +307,31 @@ TextureImporter:
     second: floor_lv1_1
   - first:
       213: 7067249032769635113
-    second: floor_lv1_3
+    second: floor_lv1_2
   - first:
       213: 7861311206385145808
-    second: floor_lv1_4
+    second: floor_lv1_3
   - first:
       213: -2517787778277943482
-    second: floor_lv1_11
+    second: floor_lv1_9
   - first:
       213: -4233375108281036418
-    second: floor_lv1_12
+    second: floor_lv1_4
   - first:
       213: -2798269480502141515
-    second: floor_lv1_13
+    second: floor_lv1_5
   - first:
       213: -8623514271239281395
-    second: floor_lv1_14
+    second: floor_lv1_6
   - first:
       213: -3634678400465595984
-    second: floor_lv1_15
+    second: floor_lv1_7
   - first:
       213: 1961798752567560640
-    second: floor_lv1_16
+    second: floor_lv1_8
   - first:
       213: -5866386305163041155
-    second: floor_lv1_17
+    second: floor_lv1_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -375,7 +375,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 90
+  spritePixelsToUnits: 95
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -495,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_3
+      name: floor_lv1_2
       rect:
         serializedVersion: 2
         x: 289
@@ -516,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_4
+      name: floor_lv1_3
       rect:
         serializedVersion: 2
         x: 390
@@ -537,12 +537,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_11
+      name: floor_lv1_9
       rect:
         serializedVersion: 2
         x: 617
-        y: 187
-        width: 109
+        y: 188
+        width: 108
         height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -558,13 +558,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_12
+      name: floor_lv1_4
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 189
-        width: 107
-        height: 95
+        width: 106
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -579,13 +579,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_13
+      name: floor_lv1_5
       rect:
         serializedVersion: 2
-        x: 144
-        y: 188
-        width: 109
-        height: 95
+        x: 146
+        y: 189
+        width: 108
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,13 +600,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_14
+      name: floor_lv1_6
       rect:
         serializedVersion: 2
-        x: 261
+        x: 262
         y: 189
-        width: 109
-        height: 95
+        width: 110
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -621,13 +621,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_15
+      name: floor_lv1_7
       rect:
         serializedVersion: 2
         x: 380
-        y: 187
-        width: 109
-        height: 95
+        y: 189
+        width: 111
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -642,12 +642,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_16
+      name: floor_lv1_8
       rect:
         serializedVersion: 2
-        x: 500
+        x: 499
         y: 188
-        width: 109
+        width: 110
         height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -663,13 +663,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_17
+      name: floor_lv1_10
       rect:
         serializedVersion: 2
         x: 733
-        y: 186
-        width: 109
-        height: 95
+        y: 189
+        width: 110
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,15 +684,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_lv1_8
+      name: floor_lv1_11
       rect:
         serializedVersion: 2
         x: 849
-        y: 188
+        y: 189
         width: 109
-        height: 95
+        height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

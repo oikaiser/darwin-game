@@ -1415,7 +1415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.855516, y: -3.4987607, z: -10}
+  m_LocalPosition: {x: 0.42139435, y: -3.515201, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687245546}
@@ -2875,7 +2875,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -21.963394, y: 7.0990124}
-      - {x: -21.855516, y: -9.99876}
+      - {x: -22.019854, y: -10.015194}
       - {x: 94.01621, y: -10.034418}
       - {x: 94.03886, y: 7.125833}
 --- !u!4 &795895943
@@ -3761,7 +3761,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1083455083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1538400073}
+        m_MethodName: Mute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1083455083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5474,6 +5485,7 @@ MonoBehaviour:
   damage: {fileID: 8300000, guid: ee291dc9d5ba5439fa7d7c4e60bd61fb, type: 3}
   pickUp: {fileID: 8300000, guid: 9fbf0946c4e024a689014e84f983ac42, type: 3}
   walk: {fileID: 8300000, guid: e94ce9e7e120e4ebeadf9bd7ec7e237f, type: 3}
+  _audioToggle: {fileID: 347892452}
 --- !u!4 &1538400074
 Transform:
   m_ObjectHideFlags: 0
@@ -5500,7 +5512,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a384d2bb09769414da74edb99e1a926a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6171,7 +6183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709824717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.3, y: -3.5499997, z: -10}
+  m_LocalPosition: {x: -5.1008186, y: -3.55, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2108791873}
@@ -7003,11 +7015,11 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 0
-  m_ScreenX: 0.5
+  m_ScreenX: 0.25
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.15
-  m_DeadZoneHeight: 0.15
+  m_DeadZoneWidth: 0.25
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8

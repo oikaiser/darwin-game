@@ -98,6 +98,14 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
+
+        if(Input.GetButtonDown("Jump") && _isGrounded == true)
+        {
+            _rigidbody.AddForce(Vector2.up * 11f, ForceMode2D.Impulse);
+            
+            // Audio
+            AudioManager.obj.PlayJump();
+        }
     }
 
     public void Jump()

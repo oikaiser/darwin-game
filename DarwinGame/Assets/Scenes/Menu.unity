@@ -536,6 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfc95344038142a8974444e6978499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  livesLabel: {fileID: 0}
   scoreLabel: {fileID: 0}
   pauseMenuUI: {fileID: 0}
 --- !u!1 &1766718320

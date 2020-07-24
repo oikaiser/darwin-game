@@ -44,6 +44,9 @@ public class PlayerHealth : MonoBehaviour
             health = 0;
             GameManager.obj.GameOver();
         }
+
+        // Audio
+        AudioManager.obj.PlayDamage();
         
         UIManager.obj.UpdateLives();
         // healthUI.sizeDelta = new Vector2(floraSize * health, floraSize);

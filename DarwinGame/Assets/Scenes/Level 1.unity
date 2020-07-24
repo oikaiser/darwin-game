@@ -5470,7 +5470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29dc61c1d75074e8a924e4495ea58f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 8300000, guid: 27076d652c28d435998482f47ae100dc, type: 3}
+  jump: {fileID: 8300000, guid: 51bab49ed7e8043b49f39c4da004be40, type: 3}
+  damage: {fileID: 8300000, guid: ee291dc9d5ba5439fa7d7c4e60bd61fb, type: 3}
+  pickUp: {fileID: 8300000, guid: 9fbf0946c4e024a689014e84f983ac42, type: 3}
+  walk: {fileID: 8300000, guid: e94ce9e7e120e4ebeadf9bd7ec7e237f, type: 3}
 --- !u!4 &1538400074
 Transform:
   m_ObjectHideFlags: 0

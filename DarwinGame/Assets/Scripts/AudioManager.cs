@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager obj;
-    public AudioClip coin;
+    public AudioClip jump, damage, pickUp, walk;
     private bool isMuted;
     private AudioSource _audioSource;
 
@@ -34,7 +34,10 @@ public class AudioManager : MonoBehaviour
         _audioSource.PlayOneShot(clip);
     }
 
-    public void PlayCoin() { PlaySound(coin); }
+    public void PlayPickUp() { PlaySound(pickUp); }
+    public void PlayJump() { PlaySound(jump); }
+    public void PlayDamage() { PlaySound(damage); }
+    public void PlayWalk() { PlaySound(walk); }
 
     void OnDestroy()
     {

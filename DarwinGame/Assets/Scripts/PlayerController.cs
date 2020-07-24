@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "PowerUp")
         {
@@ -105,7 +105,15 @@ public class PlayerController : MonoBehaviour
         if(_isGrounded == true)
         {
             _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            
+            // Audio
+            AudioManager.obj.PlayJump();
         }
+    }
+
+    void FootStep() 
+    {
+        AudioManager.obj.PlayWalk();
     }
 
     void Flip()

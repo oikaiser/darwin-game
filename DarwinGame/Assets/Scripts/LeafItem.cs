@@ -33,7 +33,7 @@ public class LeafItem : MonoBehaviour
 			burstParticles.SetActive(true);
 
             // Audio
-            AudioManager.obj.PlayCoin();
+            AudioManager.obj.PlayPickUp();
 
             // Destroy after some time
 			Destroy(gameObject, 2f);

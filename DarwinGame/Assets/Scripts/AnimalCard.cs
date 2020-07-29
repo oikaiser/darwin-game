@@ -24,6 +24,7 @@ public class AnimalCard : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             card.SetActive(true);
+            GetComponent<Collider2D>().enabled = false;
             Time.timeScale = 0f;
             PlayerController.obj.enabled = false;
         }

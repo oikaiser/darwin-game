@@ -10,6 +10,9 @@ public class UIManager : MonoBehaviour
     public Text livesLabel;
     public Text scoreLabel;
     public GameObject pauseMenuUI;
+    public GameObject cardUIOne;
+    public GameObject cardUITwo;
+    public GameObject cardUIThree;
 
     void Awake()
     {
@@ -36,6 +39,30 @@ public class UIManager : MonoBehaviour
     public void UpdateScore()
     {
         scoreLabel.text = "" + GameManager.obj.score;
+    }
+
+    public void ExitCardOne()
+    {
+        cardUIOne.SetActive(false);
+        Time.timeScale = 1f;
+        PlayerController.obj.enabled = true;
+        Destroy(cardUIOne);
+    }
+
+    public void ExitCardTwo()
+    {
+        cardUITwo.SetActive(false);
+        Time.timeScale = 1f;
+        PlayerController.obj.enabled = true;
+        Destroy(cardUITwo);
+    }
+
+    public void ExitCardThree()
+    {
+        cardUIThree.SetActive(false);
+        Time.timeScale = 1f;
+        PlayerController.obj.enabled = true;
+        Destroy(cardUIThree);
     }
 
     public void StartGame()
